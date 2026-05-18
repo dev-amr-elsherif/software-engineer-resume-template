@@ -57,10 +57,13 @@
 
 ### ✅ Method 1 — Copy Project (Fastest)
 
+> **Prerequisite:** You must have a free [Overleaf account](https://www.overleaf.com/register) and be **logged in** before opening the link.
+
 1. **Open** the Overleaf link above.
-2. In the **top-left corner**, click **Menu**.
-3. Select **"Copy Project"** → Overleaf clones the full template into your free account.
-4. Rename it, hit **Recompile**, and start editing `resume.tex`. ✓
+2. In the **top-left menu bar**, click **`File`**.
+3. Select **`Make a copy`** from the dropdown.
+4. A **"Copy project"** dialog will appear — rename the project if you like, then click the green **`Copy`** button.
+5. Overleaf clones the full template into your account. Hit **Recompile** and start editing `resume.tex`. ✓
 
 ---
 
