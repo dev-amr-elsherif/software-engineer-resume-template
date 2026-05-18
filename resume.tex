@@ -1,0 +1,192 @@
+%-------------------------
+% Custom Latex Resume Template
+% Author: Amr Fathy Elsherif
+% LinkedIn: https://linkedin.com/in/dev-amr-elsherif/
+% GitHub: https://github.com/dev-amr-elsherif
+% 
+% Heavily customized and optimized by Amr Fathy Elsherif.
+% Original base template by: https://github.com/sb2nov/resume (MIT License)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge \scshape Amr Fathy Elsherif} \\ \vspace{2pt}
+  \small \textbf{Mobile Software Engineer} \\ \vspace{4pt}
+  \small Sidi Gaber, Alexandria, Egypt $|$ \href{https://wa.me/201013946047}{\underline{01013946047}} $|$ \href{mailto:dev.amrelsherif@gmail.com}{\underline{dev.amrelsherif@gmail.com}} \\ \vspace{2pt}
+  \small \href{https://linkedin.com/in/dev-amr-elsherif/}{\underline{linkedin.com/in/dev-amr-elsherif}} $|$ \href{https://github.com/dev-amr-elsherif}{\underline{github.com/dev-amr-elsherif}} $|$ \href{https://dev-amr-elsherif.vercel.app/}{\underline{Portfolio}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{Detail-oriented \textbf{Junior Mobile Software Engineer} and Electronics \& Communications Engineering student with expertise in building cross-platform apps using \textbf{Dart} and \textbf{Flutter}. Proficient in \textbf{Clean Architecture}, \textbf{Firebase} integration, \textbf{REST APIs}, and \textbf{IoT} systems. Effective team coordinator experienced in delivering \textbf{scalable MVP} products and organizing cross-functional teams to drive impactful software solutions.}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+          \textbf{Mobile \& Software Development}{: Flutter, Dart, Android, iOS.} \\
+          \textbf{Concepts \& Architecture}{: Clean Architecture, UI/UX, State Management, REST APIs, JSON, Analytics.} \\
+          \textbf{Backend \& Databases}{: Firebase (Auth, Firestore, Realtime DB), SQLite.} \\
+          \textbf{Tools \& Version Control}{: Git, GitHub, VS Code, Android Studio, AI Tools (Gemini, Vercel).}
+        }}
+\end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{DevSync (AI Developer Matching MVP)} $|$ \emph{Flutter, Firebase, REST APIs} $|$ \href{https://github.com/dev-amr-elsherif/devsync_flutter}{\underline{[GitHub]}}}{}
+\resumeItemListStart
+\resumeItem{Led a 5-member team to architect a scalable platform, enforcing clean code and Git version control.}
+\resumeItem{Integrated Firebase (Auth, Firestore) and REST APIs for real-time data sync and AI-driven algorithms.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{WeatherLink (IoT Smart Environment Ecosystem)} $|$ \emph{Flutter, Dart, C++, ESP32-S3, Blynk API} $|$ \href{https://github.com/dev-amr-elsherif/weatherlink}{\underline{[GitHub]}}}{}
+\resumeItemListStart
+\resumeItem{Architected a scalable IoT dashboard using \textbf{Clean Architecture} and \textbf{BLoC} for real-time sensor polling.}
+\resumeItem{Engineered a high-performance \textbf{Bento Grid UI} with custom-painted charts and optimized Glassmorphism.}
+\resumeItem{Integrated bi-directional \textbf{ESP32-S3} sync via \textbf{Blynk REST APIs} with an Auto/Manual override.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{DEPI Training Portal} $|$ \emph{Vanilla JS, Tailwind, Google Sheets API} $|$ \href{https://github.com/dev-amr-elsherif/depi-training-portal}{\underline{[GitHub]}} $|$ \href{https://dev-amr-elsherif.github.io/depi-training-portal/}{\underline{[Live]}}}{}
+\resumeItemListStart
+\resumeItem{Developed a dynamic roadmap repository for 20+ trainees using Google Sheets as a real-time headless CMS.}
+\resumeItem{Engineered a responsive, Cyberpunk-themed UI utilizing glassmorphism and custom interactive animations.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Flutter-Dart Specialization (In Progress)} $|$ \emph{Provider, SQLite, Firebase, JSON} $|$ \href{https://github.com/dev-amr-elsherif/Flutter-Dart-Specialization-Packt}{\underline{[GitHub]}}}{}
+\resumeItemListStart
+\resumeItem{Building apps (Movie App, Book Tracker) using Provider, JSON, and data persistence.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Mobile App Developer Intern \& Team Leader}{Nov. 2025 -- Apr. 2026}
+{Digital Egypt Pioneers Initiative (DEPI)}{Alexandria, Egypt (Hybrid)}
+\resumeItemListStart
+\resumeItem{Coordinated 20+ trainees, optimizing task tracking and ensuring timely, successful project completions.}
+\resumeItem{Developed responsive Flutter apps with Firebase backend integration.}
+\resumeItem{Mentored peers on Git/GitHub and Provider state management, improving team code quality.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Damanhur University, Faculty of Engineering}{Aug. 2022 -- May 2027 (Expected)}
+{Bachelor's Degree in Electronics and Communications Engineering $|$ \textbf{GPA: 3.48/4.0}}{Damanhur, Egypt}
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Forward Program (Core Skills Level)} $|$ \emph{McKinsey \& Company}}{Expected June 2026}
+\resumeProjectHeading
+{\textbf{Getting Started with Flutter \& Dart} (ID: G3TC13R6ZLMO) $|$ \emph{Coursera - Packt}}{Issued Apr. 2026}
+\resumeProjectHeading
+{\textbf{Flutter \& Dart App Development Specialization} $|$ \emph{Coursera - Packt}}{In Progress}
+\resumeSubHeadingListEnd
+
+%-----------LEADERSHIP & VOLUNTEERING-----------
+\section{Leadership \& Volunteering}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Honorary Guest Speaker} $|$ \emph{Creativa Hub Damanhour}}{Apr. 2026}
+\resumeProjectHeading
+{\textbf{Volunteer Member} $|$ \emph{Resala Charity Organization}}{Oct. 2019 -- Aug. 2020}
+\resumeProjectHeading
+{\textbf{Lead Organizer} $|$ \emph{Community Ramadan Initiative}}{Jan. 2025 -- Apr. 2026}
+\resumeSubHeadingListEnd
+
+%-----------SOFT SKILLS & LANGUAGES-----------
+\section{Soft Skills \& Languages}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+          \textbf{Soft Skills}{: Effective Communication, Problem Solving, Team Coordination, Adaptability, Continuous Learning.} \\
+          \textbf{Languages}{: Arabic (Native), English (Upper-Intermediate).}
+        }}
+\end{itemize}
+\end{document}
