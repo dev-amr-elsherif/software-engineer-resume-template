@@ -1,22 +1,20 @@
 <div align="center">
 
-<!-- ░░ NEON HEADER BANNER ░░ -->
-
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║     ██████╗ ███████╗███████╗██╗   ██╗███╗   ███╗███████╗     ║
-║     ██╔══██╗██╔════╝██╔════╝██║   ██║████╗ ████║██╔════╝     ║
-║     ██████╔╝█████╗  ███████╗██║   ██║██╔████╔██║█████╗       ║
-║     ██╔══██╗██╔══╝  ╚════██║██║   ██║██║╚██╔╝██║██╔══╝       ║
-║     ██║  ██║███████╗███████║╚██████╔╝██║ ╚═╝ ██║███████╗     ║
-║     ╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝     ║
+║  ██████╗ ███████╗███████╗██╗   ██╗███╗   ███╗███████╗       ║
+║  ██╔══██╗██╔════╝██╔════╝██║   ██║████╗ ████║██╔════╝       ║
+║  ██████╔╝█████╗  ███████╗██║   ██║██╔████╔██║█████╗         ║
+║  ██╔══██╗██╔══╝  ╚════██║██║   ██║██║╚██╔╝██║██╔══╝         ║
+║  ██║  ██║███████╗███████║╚██████╔╝██║ ╚═╝ ██║███████╗       ║
+║  ╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝       ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
 # ⚡ Software Engineer Resume Template
 
-**A battle-tested, minimalist, ATS-optimized LaTeX resume template**  
-*Purpose-built for Software Engineers · Mobile Developers · Tech Juniors*
+**Minimalist · ATS-Optimized · One-Page · LaTeX**  
+*Built for Software Engineers · Mobile Developers · Tech Juniors*
 
 ---
 
@@ -29,152 +27,123 @@
 
 ---
 
-## 🧠 Why This Template Exists
+## 🧠 Why This Template?
 
-> The average recruiter spends **6 seconds** scanning a resume. Most templates fail tech juniors before they even get a callback.
-
-This template was engineered to **eliminate that problem** — zero fluff, maximum signal. It is the product of deep research into how modern Applicant Tracking Systems parse LaTeX-generated PDFs and how senior technical recruiters evaluate early-career candidates.
+> The average recruiter spends **6 seconds** scanning a resume. Most templates fail tech juniors before they get a callback.
 
 | Challenge | This Template's Solution |
 |:---|:---|
 | 📄 Resume too long | Strict one-page layout with calibrated margins |
 | 🤖 ATS fails to parse it | `pdfgentounicode=1` + `hidelinks` hyperref config |
 | 🔍 Low keyword density | Section order optimized for technical keyword prominence |
-| 🎨 Overdesigned layouts | Clean typographic hierarchy — no tables, no columns, no icons |
+| 🎨 Overdesigned layouts | Clean typographic hierarchy — no columns, no icons, no noise |
 | 🧩 Hard to customize | Modular macro system — swap content without touching structure |
 
 ---
 
-## 👁️ Live Preview & Instant Cloud Editing
+## ☁️ Option A — Online Setup · `Zero-Config` · *Recommended*
 
-No local setup required. Open the template directly on **Overleaf** and start editing in seconds:
+> **No installation. No compiler. No setup.** Edit and compile entirely in your browser via Overleaf.
 
 <div align="center">
 
-[![Open in Overleaf](https://img.shields.io/badge/Open%20in%20Overleaf-View%20%26%20Edit%20Live-47A141?style=for-the-badge&logo=overleaf&logoColor=white)](https://www.overleaf.com/read/wxvvcdjzxnng#d23995)
+[![Open in Overleaf](https://img.shields.io/badge/Open%20in%20Overleaf-%E2%86%92%20View%20Template-47A141?style=for-the-badge&logo=overleaf&logoColor=white)](https://www.overleaf.com/read/wxvvcdjzxnng#d23995)
 
 </div>
 
-> **Tip:** Click the badge above → Overleaf opens with a **read-only view**. Hit **"Copy Project"** in the top menu to clone it to your own account and start editing immediately — no sign-in required to preview.
+> ⚠️ **The link above is READ-ONLY.** You cannot edit my project directly. Follow one of the two steps below to get your own editable copy.
+
+---
+
+### ✅ Method 1 — Copy Project (Fastest)
+
+1. **Open** the Overleaf link above.
+2. In the **top-left corner**, click **Menu**.
+3. Select **"Copy Project"** → Overleaf clones the full template into your free account.
+4. Rename it, hit **Recompile**, and start editing `resume.tex`. ✓
+
+---
+
+### ✅ Method 2 — Blank Project + Paste
+
+1. Create a **New Blank Project** on [overleaf.com](https://www.overleaf.com).
+2. Open [`resume.tex`](./resume.tex) in this repository and **copy the full raw source**.
+3. **Paste** it into the `main.tex` file of your blank Overleaf project.
+4. Hit **Recompile** — done. ✓
+
+---
+
+> [!TIP]
+> **Don't know LaTeX? Let AI do the heavy lifting.**
+>
+> Copy the full contents of `resume.tex`, then paste it into **Gemini**, **ChatGPT**, or **Claude** with a prompt like:
+>
+> *"Update this LaTeX resume template with my information: [paste your details here]"*
+>
+> The AI will instantly fill in your name, experience, skills, and projects — no LaTeX knowledge required. Just paste the output back into Overleaf and recompile.
 
 ---
 
 ## ✨ Key Features
 
-### `[01]` — One-Page Layout Optimization
-Every spacing decision — margins, `\vspace`, `\resumeItemListEnd` padding — is mathematically tuned to maximize content density without sacrificing whitespace clarity. You get the most real estate possible on a single page.
-
-### `[02]` — Flawless ATS Parsing
-- `\pdfgentounicode=1` ensures the PDF is machine-readable at the glyph level
-- `[hidelinks]` hyperref flag prevents link-box artifacts that confuse parsers
-- Standard section titles (`Experience`, `Education`, `Skills`) recognized by all major ATS engines (Greenhouse, Lever, Workday)
-- No multi-column layouts — single-column flow that parsers can read top-to-bottom
-
-### `[03]` — Clean & Non-Cluttered Code Architecture
-- Reusable macro commands: `\resumeItem`, `\resumeSubheading`, `\resumeProjectHeading`
-- Separation of concerns: preamble (config) → macros (commands) → document (content)
-- Zero redundant packages — every import has a purpose
-- Annotated section markers for instant navigation
-
-### `[04]` — Easy Customization
-Swap your content in clearly labeled blocks — no LaTeX expertise required:
+- **`[01]` One-Page Layout** — Margins, spacing, and padding are mathematically tuned to maximize content density on exactly one page.
+- **`[02]` Flawless ATS Parsing** — `\pdfgentounicode=1` ensures machine-readable glyphs. Single-column flow is parseable by Greenhouse, Lever, Workday, and all major ATS engines.
+- **`[03]` Clean Code Architecture** — Reusable macros (`\resumeItem`, `\resumeSubheading`, `\resumeProjectHeading`), annotated section markers, zero redundant packages.
+- **`[04]` Easy Customization** — Content lives in clearly labeled blocks. Swap your info without touching the structure.
 
 ```
-%-----------HEADING-----------     ← Your name, title, contacts
-%-----------SUMMARY-----------     ← Professional summary (optional)
-%-----------TECHNICAL SKILLS---    ← Skills table
-%-----------PROJECTS-----------    ← Project entries
-%-----------WORK EXPERIENCE----    ← Experience entries
+%-----------HEADING-----------     ← Name, title, contacts
+%-----------SUMMARY-----------     ← Professional summary
+%-----------TECHNICAL SKILLS---    ← Skills
+%-----------PROJECTS-----------    ← Projects
+%-----------WORK EXPERIENCE----    ← Experience
 %-----------EDUCATION----------    ← Degree(s)
 %-----------CERTIFICATIONS-----    ← Certs & courses
-%-----------LEADERSHIP---------    ← Volunteering / leadership
+%-----------LEADERSHIP---------    ← Volunteering
 %-----------SOFT SKILLS--------    ← Soft skills & languages
 ```
 
 ---
 
-## 🚀 Setup & Compilation Guide
+## 🖥️ Option B — Local Setup · `Advanced`
 
-### ☁️ Option A — Cloud (Zero Configuration) · *Recommended*
+For offline editing with full IDE features (IntelliSense, SyncTeX, live PDF preview).
 
-The fastest way to get started. No installation, no compiler setup.
+### Prerequisites
 
-1. Click → [![Open in Overleaf](https://img.shields.io/badge/Overleaf-Open%20Template-47A141?style=flat-square&logo=overleaf)](https://www.overleaf.com/read/wxvvcdjzxnng#d23995)
-2. In the top menu, select **Menu → Copy Project**
-3. Edit `resume.tex` directly in the browser
-4. Hit **Recompile** — your PDF updates live ✓
+| Tool | Purpose |
+|:---|:---|
+| [VS Code](https://code.visualstudio.com/) | Editor / IDE |
+| [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) | VS Code extension — build, preview, SyncTeX |
+| [MiKTeX](https://miktex.org/download) | LaTeX compiler + auto package manager |
+| [Strawberry Perl](https://strawberryperl.com/) | Required by the `latexmk` build tool |
 
-> Overleaf handles all LaTeX dependencies automatically. No `MiKTeX`, no Perl, no extensions needed.
-
----
-
-### 🖥️ Option B — Local Setup (VS Code + LaTeX Workshop)
-
-For offline editing and full IDE features (IntelliSense, SyncTeX, PDF preview).
-
-#### Prerequisites
-
-| Tool | Purpose | Download |
-|:---|:---|:---|
-| **VS Code** | Editor / IDE | [code.visualstudio.com](https://code.visualstudio.com/) |
-| **LaTeX Workshop** | VS Code extension for LaTeX | [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) |
-| **MiKTeX** | LaTeX distribution (compiler + packages) | [miktex.org](https://miktex.org/download) |
-| **Strawberry Perl** | Required by `latexmk` build tool | [strawberryperl.com](https://strawberryperl.com/) |
-
-#### Step-by-Step
-
-**1. Clone the repository**
+### Steps
 
 ```bash
+# 1. Clone the repo
 git clone https://github.com/dev-amr-elsherif/software-engineer-resume-template.git
 cd software-engineer-resume-template
-```
 
-**2. Install MiKTeX**
-
-```
-# Run the MiKTeX installer from https://miktex.org/download
-# During setup: choose "Install missing packages on-the-fly" → Always
-```
-
-**3. Install Strawberry Perl**
-
-```
-# Download and run the installer from https://strawberryperl.com/
-# Verify installation:
-perl --version
-```
-
-**4. Install the LaTeX Workshop extension in VS Code**
-
-```
-ext install James-Yu.latex-workshop
-```
-
-**5. Open the project and compile**
-
-```bash
-# Open in VS Code
+# 2. Open in VS Code
 code .
-
-# LaTeX Workshop will auto-detect resume.tex
-# Press Ctrl+Alt+B  →  Builds the PDF
-# Press Ctrl+Alt+V  →  Opens PDF preview side-by-side
 ```
 
-> **Note:** On first build, MiKTeX will auto-download any missing packages. Ensure you have an internet connection for the initial compile.
+- Install **MiKTeX** → during setup, set missing packages to **"Install on-the-fly → Always"**
+- Install **Strawberry Perl** → verify with `perl --version`
+- Install the **LaTeX Workshop** extension in VS Code
 
-#### Recommended VS Code Settings (`.vscode/settings.json`)
+```
+Ctrl+Alt+B  →  Build PDF
+Ctrl+Alt+V  →  Open PDF preview
+```
+
+> On first build, MiKTeX auto-downloads any missing packages. Requires an internet connection.
+
+### Recommended `settings.json`
 
 ```jsonc
 {
-  "latex-workshop.latex.tools": [
-    {
-      "name": "latexmk",
-      "command": "latexmk",
-      "args": ["-pdf", "-synctex=1", "-interaction=nonstopmode", "%DOC%"]
-    }
-  ],
   "latex-workshop.view.pdf.viewer": "tab",
   "latex-workshop.latex.autoBuild.run": "onSave"
 }
@@ -186,46 +155,33 @@ code .
 
 ```
 software-engineer-resume-template/
-│
-├── resume.tex          ← Main LaTeX source (edit this)
-├── resume.pdf          ← Compiled output (auto-generated)
-├── .gitignore          ← Ignores LaTeX aux files
-└── README.md           ← You are here
+├── resume.tex     ← Source file (edit this)
+├── resume.pdf     ← Compiled output
+├── .gitignore     ← Ignores LaTeX aux files
+└── README.md
 ```
 
 ---
 
 ## 📜 License & Credits
 
-This template is released under the **MIT License** — free to use, modify, and distribute, including for commercial purposes.
+Released under the **MIT License** — free to use, modify, and distribute.
 
 ```
 MIT License © 2025 Amr Fathy Elsherif
 ```
 
-### Attribution
-
-> This template is **heavily customized and optimized** by **Amr Fathy Elsherif**, built upon the original open-source base template by [**sb2nov**](https://github.com/sb2nov/resume) (MIT License).  
-> Significant modifications include: ATS unicode configuration, custom macro architecture, section reordering for keyword prominence, and typography/spacing calibration.
+> This template is **heavily customized and optimized** by **Amr Fathy Elsherif**, built upon the original open-source base by [**sb2nov**](https://github.com/sb2nov/resume) (MIT License).
 
 ---
 
-## 👤 Author
-
 <div align="center">
 
-**Amr Fathy Elsherif**  
-*Mobile Software Engineer · Electronics & Communications Engineering Student*
+**Amr Fathy Elsherif** · Mobile Software Engineer
 
 [![GitHub](https://img.shields.io/badge/GitHub-dev--amr--elsherif-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dev-amr-elsherif)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-dev--amr--elsherif-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/dev-amr-elsherif/)
 
-</div>
-
----
-
-<div align="center">
-
-*If this template helped you land an interview — drop a ⭐ on the repo. It means a lot.*
+*If this template helped you land an interview — drop a ⭐ on the repo.*
 
 </div>
